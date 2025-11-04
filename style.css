@@ -10,3 +10,37 @@
 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+
+.testimonial-image > p > img{
+  max-width: 200px;
+  border-radius: 100%;
+}
+
+.text-small{
+  font-size: x-large;
+}
+
+.testimonial-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-col-gap: 100px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.testimonial-image > p,
+blockquote{
+  margin: 0 !important;
+}
+
+blockquote > p{
+  font-style: italic;
+}
+
+.attribution {
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+  text-align: right;
+}

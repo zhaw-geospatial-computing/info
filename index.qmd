@@ -9,26 +9,62 @@ format:
     template-partials:
       - title-slide.html
     css: style.css
-    title-slide-attributes: 
-      data-background-image: images/atmosphere_geo5_2018235_lrg_2.jpg
+    # title-slide-attributes: 
+      # data-background-image: images/atmosphere_geo5_2018235_lrg_2.jpg
     
 
 ---
 
-# Wildtier Bewegungen {background-image="images/roe-deer-8178919_1920.jpg" class="blurred shadow"}
+# Räumzeitliche Analysen {background-image="images/migration.png" class="shadow"}
+
+# Umgang mit Unsicherheit {background-image="images/mountain-6867144_1920.jpg" class="shadow"}
 
 # Netzwerkanalyse {background-image="images/architecture-1837176_1920.jpg" class="blurred shadow"}
 
-# Unsicherheit {background-image="images/mountain-6867144_1920.jpg" class="shadow"}
-
 # Scripting {background-image="images/typewriter-8622984_1280.jpg" class="shadow blurred"}
 
+# Geovisualisierung {background-image="images/atmosphere_geo5_2018235_lrg_2.jpg"}
 
 
 
   
+#
 
 
+::::{.testimonial-container  .text-small}
+
+:::{.testimonial-image}
+![](images/max.webp){#max}
+:::
+
+:::{.testimonial-content}
+> Ich hätte nie gedacht, wie wichtig und nützlich GIS in meinem Berufsleben sein würde. Nun arbeite ich fast jeden Tag damit.
+:::
+
+:::{.attribution}
+— Max Pröschel<br>Amt für Abfall, Wasser, Energie und Luft - Kanton Zürich
+:::
+::::
+  
+#
 
 
+::::{.testimonial-container  .text-small}
+
+:::{.testimonial-image}
+![](images/fabienne-stucki-2.jpg){#fabi}
+:::
+
+:::{.testimonial-content}
+> GIS ist tagtäglich Teil unserer Arbeit. Wir nutzen es für Darstellungen in Berichten, Boden- oder Vegetationskarten, Aufnahmen im Feld, für Analysen oder Gestaltungspläne.
+:::
+
+:::{.attribution}
+— Fabienne Stucki, UI09<br>Mitarbeiterin bei K + D Landschaftsplanung AG, Chur
+:::
+::::
+ 
+
+
+# {background-image="images/stelle.png" background-size="contain" background-color="#333333"}
 
