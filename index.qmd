@@ -1,6 +1,7 @@
 ---
 title: "Modul *Geospatial Computing*"
 subtitle: "Im Minor *Spatial Data Science*"
+author: ""
 format: 
   revealjs:
     transition: convex
@@ -11,9 +12,13 @@ format:
     css: style.css
     # title-slide-attributes: 
       # data-background-image: images/atmosphere_geo5_2018235_lrg_2.jpg
-    
-
 ---
+
+#
+
+![](images/minor.png){#minor}
+
+
 
 # Räumzeitliche Analysen {background-image="images/migration.png" class="shadow"}
 

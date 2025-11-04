@@ -1,3 +1,7 @@
+#minor{
+  width: 50% !important;
+  height: 50% !important;
+}
 .blurred .slide-background-content,
 .slide-background:first-child .slide-background-content
 {
