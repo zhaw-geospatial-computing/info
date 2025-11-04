@@ -1,0 +1,34 @@
+---
+title: "Modul *Geospatial Computing*"
+subtitle: "Im Minor *Spatial Data Science*"
+format: 
+  revealjs:
+    transition: convex
+    background-transition: fade
+    theme: dark
+    template-partials:
+      - title-slide.html
+    css: style.css
+    title-slide-attributes: 
+      data-background-image: images/atmosphere_geo5_2018235_lrg_2.jpg
+    
+
+---
+
+# Wildtier Bewegungen {background-image="images/roe-deer-8178919_1920.jpg" class="blurred shadow"}
+
+# Netzwerkanalyse {background-image="images/architecture-1837176_1920.jpg" class="blurred shadow"}
+
+# Unsicherheit {background-image="images/mountain-6867144_1920.jpg" class="shadow"}
+
+# Scripting {background-image="images/typewriter-8622984_1280.jpg" class="shadow blurred"}
+
+
+
+
+  
+
+
+
+
+

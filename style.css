@@ -1,0 +1,12 @@
+.blurred .slide-background-content,
+.slide-background:first-child .slide-background-content
+{
+  filter: blur(4px)
+}
+
+.shadow > h1,
+#title-slide > h1,
+#title-slide > p
+{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
