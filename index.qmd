@@ -47,7 +47,7 @@ rata\@zhaw.ch
 
 
 
-# Räumzeitliche Analysen {background-image="images/migration.png" class="shadow"}
+# Raumzeitliche Analysen {background-image="images/migration.png" class="shadow"}
 
 # Umgang mit Unsicherheit {background-image="images/mountain-6867144_1920.jpg" class="shadow"}
 
