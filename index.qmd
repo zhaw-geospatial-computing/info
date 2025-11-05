@@ -47,7 +47,18 @@ rata\@zhaw.ch
 
 
 
-# Raumzeitliche Analysen {background-image="images/migration.png" class="shadow"}
+# Raumzeitliche Analysen {background-video="images/ouput2.webm" background-video-loop="true" class="shadow"}
+
+
+::: footer
+Quelle: [www.maps.tnc.org](https://www.maps.tnc.org/migrations-in-motion/)
+:::
+
+:::{.notes}
+
+Migration von Vögel (Türkis / Blau), Säugetiere (Pink) und Amphibien (Gelb)
+
+:::
 
 # Umgang mit Unsicherheit {background-image="images/mountain-6867144_1920.jpg" class="shadow"}
 
@@ -57,6 +68,9 @@ rata\@zhaw.ch
 
 # Geovisualisierung {background-image="images/atmosphere_geo5_2018235_lrg_2.jpg"}
 
+::: footer
+Quelle: [earthobservatory.nasa.gov/](https://earthobservatory.nasa.gov/images/92654/just-another-day-on-aerosol-earth)
+:::
 
 
   
