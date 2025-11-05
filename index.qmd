@@ -16,6 +16,33 @@ format:
 
 #
 
+
+::::{.testimonial-container  .text-small}
+
+:::{.testimonial-image}
+![](images/rata.webp){#rata}
+:::
+
+:::{.testimonial-content}
+**Nils Ratnaweera**
+
+Wissenschaftlicher Mitarbeiter  
+Forschungsgruppe Geoinformatik  
+
+Institut für Umwelt und Natürliche Ressourcen  
+ZHAW Zürcher Hochschule für Angewandte Wissenschaften  
+Grüental, Postfach, CH-8820 Wädenswil
+
++41 58 934 55 63  
+rata\@zhaw.ch  
+:::
+
+::::
+
+
+
+#
+
 ![](images/minor.png){#minor}
 
 
