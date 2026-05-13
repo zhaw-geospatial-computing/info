@@ -17,7 +17,7 @@
 
 Students are able to:
 
-- process and analyse vector and raster geospatial data using R in a script-based workflow.
+- process and analyse vector and raster geospatial data using scripting tools in a script-based workflow.
 - combine and apply script-based geospatial workflows with GIS desktop software (e.g. QGIS).
 - independently carry out spatial analyses and transformations of geospatial datasets.
 - develop automated and reproducible geospatial workflows.
@@ -28,7 +28,7 @@ Students are able to:
 ## Module Content
 
 - Advanced concepts of vector and raster geospatial data
-- Script-based spatial data processing and analysis (R)
+- Script-based spatial data processing and analysis
 - Integration of scripting workflows with GUI-based GIS software
 - Spatial analysis and transformation of geospatial datasets
 - Visualisation and communication of spatial information
@@ -61,16 +61,17 @@ Interactive lectures with inputs and demonstrations; hands-on computer-based exe
 
 ## Classroom Attendance
 
-None
+Coaching session (100%) — required; pass/fail. Must be passed to pass the module.
 
 ## Assessment
 
 | Form | Duration (min.) | Weight % |
 |---|---|---|
-| Coursework (project proposal and coaching session) | – | 40% |
-| Oral end-of-module exam (project presentation and discussion) | approx. 20 | 60% |
+| Predicate: Project proposal (pass/fail) | – | – |
+| Predicate: Written project report (pass/fail) | – | – |
+| Oral end-of-module exam (project presentation and discussion) | approx. 20 | 100% |
 
-**Comments on assessment:** The coursework component comprises a written project proposal (topic, research question, planned methods) and a graded coaching session based on that proposal. The oral end-of-module exam consists of a presentation of the completed project followed by a technical discussion; the exam assesses students' understanding of the methods and results applied, not the project output itself.
+**Comments on assessment:** The course assessment consists of three predicates — (1) a project proposal, (2) a coaching session and (3) a written report — and an oral exam. All predicates must be passed to sit the oral exam. The module grade is determined solely by the oral end-of-module exam.
 
 ## Language of Instruction
 

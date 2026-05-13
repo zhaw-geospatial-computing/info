@@ -1,0 +1,169 @@
+---
+title: "Geospatial Computing — Course Planning Meeting"
+subtitle: "Preparatory Information for Co-Lecturers"
+author: "Nils Ratnaweera"
+date: today
+format:
+  typst: default
+execute:
+  echo: false
+---
+
+## Purpose of This Meeting
+
+This document provides background and a proposed framework for the new *Geospatial Computing* module. The goal of the meeting is to agree on the course structure and divide topics between us three lecturers (murj, rahn, laup). 
+
+## Module at a Glance
+
+|                     |                                                             |
+| ------------------- | ----------------------------------------------------------- |
+| **Study programme** | BSc Umweltingenieurwesen, ZHAW IUNR                         |
+| **Type**            | Elective module (Wahlpflichtmodul)                          |
+| **Minor**           | Spatial Data Science                                        |
+| **Semester**        | 5th semester (HS)                                           |
+| **ECTS**            | 5 (= 150 h total workload)                                  |
+| **Contact hours**   | ~4 × 45 min/week × 14 weeks ≈ 56 h                          |
+| **Language**        | English                                                     |
+| **Prerequisite**    | Geoinformatik und GIS (3rd semester)                        |
+| **Students**        | ~30, environmental engineering, some programming background |
+
+## Capacity Constraints
+
+The 14-week semester is not fully available for teaching:
+
+- ~1 week: project proposal presentations
+- ~1 week: coaching sessions (mandatory attendance)
+
+This leaves roughly **12–13 weeks for teaching inputs**, shared between three lecturers — approximately **3–4 weeks per person**.
+
+## Assessment Structure (confirmed)
+
+Students complete three pass/fail predicates and one graded exam:
+
+| Component                         | Type      | Description |
+| --------------------------------- | --------- | ----------- |
+| Project proposal                  | Predicate | pass/fail   |
+| Written project report            | Predicate | pass/fail   |
+| Coaching session attendance       | Predicate | pass/fail   |
+| Oral end-of-module exam (~20 min) | Grade     | 100% weight |
+
+The oral exam tests understanding of methods and results, not the project output itself. This is a deliberate design choice to guard against unreflective AI use. All predicates must be passed to sit the exam.
+
+## Proposed Course Framework
+
+The course is organised along two axes: **methods** and **domains**.
+
+### Methods Axis {#sec-methods}
+
+Each lecturer teaches one or more method blocks. Each block is anchored to a specific application domain (see below), giving students a concrete dataset and problem to work with. The following methods are currently on the list — part of the meeting agenda is to reduce / enhance and confirm this list:
+
+1. **Spatial pattern analysis** — autocorrelation, hotspot analysis, interpolation
+2. **Uncertainty quantification** — Monte Carlo simulation, error propagation, sensitivity analysis
+3. **Image processing** — automated detection from camera trap imagery (e.g. MegaDetector)
+4. **Multi-Criteria Analysis (MCA)** — spatial suitability modelling, decision support
+5. **Network Analysis** — routing, connectivity, accessibility
+
+> We likely have capacity for **3–4 of these**, not all five. Selection is a key agenda item.
+
+### Domains Axis {#sec-domain}
+
+Each method block is taught in the context of one application domain. Students then choose a domain for their own semester project and apply the methods they have learned. Current candidate domains:
+
+1. **Wildlife Monitoring** — camera trap data, opportunistic species observations
+2. **Vegetation Ecology** — spatial and temporal vegetation surveys
+3. **Hydrology** — vectorised river networks (no remote sensing or drone data)
+4. **Environmental Planning** — visitor management, quiet area mapping
+
+### Toolsets {#sec-toolsets}
+
+The following tools are introduced where relevant, rather than as standalone blocks:
+
+- R / RStudio
+- QGIS
+- QGIS Model designer
+- Building a QGIS Plugin — Python-based extension
+- Databases (PostGIS / SQLite)
+- QField
+- Webmapping
+
+## Rough Semester Skeleton
+
+@tbl-plan Shows a rough semester plan, very similar to the legacy AGI Modul. Each block is about 3 or 4 weeks long. Each block is in a [single domain]{.underline} and covers [1 or 2 methods]{.underline} introducing [1 or 2 toolsets]{.underline}.
+
+```{r}
+#| output: false
+library(tinytable)
+library(dplyr)
+library(readr)
+semester_plan <- read_csv("semester_plan.csv") |> 
+  mutate(
+    lecturer_block = case_when(
+      !is.na(lecturer)~paste(lecturer, block),
+      .default = topic
+    )
+    ) |> 
+  select(-c(lecturer, block)) |> 
+  mutate(across(everything(), \(x)ifelse(is.na(x), "", x)))
+```
+
+```{r}
+#| label: tbl-plan
+
+select(semester_plan, -lecturer_block) |> 
+  tt() |> 
+  group_tt(i = semester_plan$lecturer_block)
+```
+## Course Framework: Three Axes
+
+As described in @tbl-plan each block consists of one domain, and covers 1-2 methods and introduceds 1-2 toolsets. So we we should end up with about 1 - 3 lines per connection, as shown in @fig-connection.
+
+```{r}
+#| fig-width: 9
+#| fig-height: 5
+#| warning: false
+#| label: fig-connection 
+#| fig-cap: Each topic connects the three axis, as shown in a single example.
+library(ggplot2)
+library(tibble)
+
+domains  <- c("Wildlife Monitoring", "Vegetation Ecology", "Hydrology", "Environmental Planning")
+methods  <- c("Spatial Pattern Analysis", "Uncertainty Quantification", "Image Processing", "Multi-Criteria Analysis", "Network Analysis")
+toolsets <- c("R / Python", "QGIS", "QGIS Model Designer", "QGIS Plugin", "Databases", "QField", "Webmapping")
+
+nodes <- bind_rows(
+  tibble(col = 1, label = domains,  axis = "Domains"),
+  tibble(col = 2, label = methods,  axis = "Methods"),
+  tibble(col = 3, label = toolsets, axis = "Toolsets")
+) |>
+  group_by(col) |>
+  mutate(y = (n():1) - (n() + 1) / 2) |>
+  ungroup()
+
+edges <- tribble(
+  ~from,              ~to,
+  "Network Analysis", "Environmental Planning",
+  "Network Analysis", "R / Python"
+) |>
+  left_join(nodes |> select(label, x = col, y), by = c("from" = "label")) |>
+  left_join(nodes |> select(label, xend = col, yend = y), by = c("to" = "label"))
+
+ggplot(nodes, aes(x = col, y = y, label = label)) +
+  geom_segment(data = edges, aes(x = x, y = y, xend = xend, yend = yend),
+               inherit.aes = FALSE, colour = "steelblue", linewidth = 0.8) +
+  geom_label(fill = "white", label.size = 0.3) +
+  scale_x_continuous(breaks = 1:3, labels = c("Domains", "Methods", "Toolsets"),
+                     limits = c(0.5, 3.5), position = "top") +
+  theme_void() +
+  theme(axis.text.x = element_text(face = "bold", size = 11))
+```
+
+## Agenda for Our Meeting
+
+
+1. **Confirm the three lists**: Are any domains / methods / toolsets missing or superfluous?
+2. **Perfect Matches**: 
+   - Which domains, methods and toolsets offer themselves? 
+   - What projects have we worked on that we could build upon?
+   - (What datasets are suitable)
+3. **What combinations of domains, methods and toolsets** are you intersted in following in your block? (A "connection" in @fig-connection)
+

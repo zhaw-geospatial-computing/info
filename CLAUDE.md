@@ -32,11 +32,14 @@
 | Total | 150 |
 
 ## Assessment (confirmed)
-| Form | Duration | Weight |
-|---|---|---|
-| Coursework: project proposal + graded coaching session | – | 40% |
-| Oral end-of-module exam: project presentation + technical discussion | ~20 min | 60% |
+| Form | Weight |
+|---|---|
+| Predicate: Project proposal (pass/fail) | – |
+| Predicate: Written project report (pass/fail) | – |
+| Predicate: Coaching session attendance (pass/fail, Präsenzpflicht Fall 2) | – |
+| Oral end-of-module exam: project presentation + technical discussion (~20 min) | 100% |
 
+- All predicates must be passed to sit the oral exam / pass the module
 - The oral exam tests understanding of methods/results, NOT the project output itself (guard against unreflected AI use)
 - 30 students × 20 min = 10 hours of examining → needs 2–3 exam days + co-examiner
 - Co-lecturers: to be determined after topics are settled
@@ -62,51 +65,65 @@
 - "Scal" enters Studiengang and Rechtsordnung fields
 - Template field "Leistungsnachweis" is displayed differently in Moku vs. the Word template
 
-## Course Structure: Two-Axis Framework
+## Course Structure
 
-### Methods axis (confirmed, all at same abstraction level)
-1. Spatial statistics & pattern analysis (autocorrelation, hotspots, interpolation)
-2. Uncertainty quantification (Monte Carlo, error propagation, sensitivity)
-3. Image processing — camera traps, automated detection (open: convince Nils this ≠ RS)
-4. Multi-Criteria Analysis (spatial suitability, decision support)
-5. Geovisualization (treated as cross-cutting output skill, introduced week 1, reinforced throughout)
+### Blocks (confirmed, no numbers)
 
-Excluded (deliberate):
-- Movement analysis → covered in consecutive Master's programme
-- Remote sensing → separate module
-- Google Earth Engine → briefly touched in RS course
-- Databases → treated as infrastructure, not a standalone method
+- **Introduction** (week 1, rata) — module intro, toolchain setup, CRS/projections recap
+- **Terrain & Water** (murj, weeks 2–3) — domain: Hydrology
+- **Spatial Ecology & Occurrence Data** (rahn, weeks 4–5) — domain: Wildlife Monitoring
+- **Paths & Flows** (rata, weeks 6–7) — domain: Environmental Planning
+- **Semester Project** (rata, week 8) — introduction & topic finding
+- **Advanced / Applied Sessions** (weeks 9–11) — one per block, see below
+- **Semester Project** (all, weeks 12–14) — coaching and guided self-study
 
-### Domains axis (confirmed)
-1. Wildlife Monitoring (camera traps, spontaneous observations)
-2. Vegetation Ecology (recordings over space and time)
-3. Hydrology (vectorized river data etc.; RS/drone excluded)
-4. Environmental Planning (visitor management/monitoring)
+### Weeks 9–11: Advanced Sessions (one per block)
 
-Note: Wildlife Monitoring and Environmental Planning share the same camera trap pipeline — image processing method block covers both.
+| W | Block | Subtitle | Lecturer |
+|---|---|---|---|
+| 9 | Terrain & Water | Workflow Automation (QGIS Graphical Modeler, batch processing) | murj |
+| 10 | Spatial Ecology & Occurrence | Webmapping in the Open Source Ecosystem | rahn |
+| 11 | Paths & Flows | Uncertainty in Geodata (OSM quality, routing/isochrone sensitivity, Monte Carlo) | rata |
 
-### Pedagogical decisions (confirmed)
-- Each method block is anchored to **one specific domain** (depth over breadth)
-- Geovisualization introduced in week 1 as infrastructure, reinforced in every block
-- Students choose a domain for their project and apply methods learned in class
-- LLM/AI angle: students use pre-trained models/AI tools, oral exam tests whether they understood what the tool did
+- Uncertainty is covered in week 11, tied to the Paths & Flows domain (concrete, visual examples)
+- The three standalone "Uncertainty in X" sessions were dropped as too abstract
 
-### Rough 14-week skeleton (draft)
-| Weeks | Content |
-|---|---|
-| 1–2 | Foundations: spatial data refresher, databases, reproducible workflows (Quarto) + geovisualization |
-| 3–4 | Spatial statistics & pattern analysis |
-| 5–6 | Uncertainty quantification |
-| 7–8 | Image processing (camera traps / automated detection) |
-| 9–10 | Multi-Criteria Analysis |
-| 11–12 | Project work + coaching sessions |
-| 13–14 | Oral exams |
+### Domains (confirmed)
+- Wildlife Monitoring (camera traps, opportunistic observations)
+- Hydrology (vectorised river data; RS/drone excluded)
+- Environmental Planning (visitor management/monitoring)
 
-Domain-to-method assignments not yet decided.
+## Semester Plan (Geospatial-Computing-CurrFS27.xlsx → Sheet: Wochenprogramm)
+
+- Source of truth for the weekly plan is the xlsx file, Sheet "Wochenprogramm" (other sheets are from a different module)
+- Read the xlsx with openpyxl (file can be open in LibreOffice while reading)
+- File was renamed from SpatialDataScienceDotationCurrFS27.xlsx to Geospatial-Computing-CurrFS27.xlsx
+
+### Column structure (as of 2026-05-07)
+- **Block** — topic spanning multiple weeks (cells merged in Excel)
+- **Subtitle** — short per-week description
+- **Details / keywords** — current combined column; being split into:
+  - **Theory** — concepts and background covered in lecture
+  - **Labs** — hands-on exercises
+  - **Seminar / Group work** — interactive activities (not every week; more = better)
+
+### Weekly plan summary
+
+| W | Block | Subtitle |
+|---|---|---|
+| 1 | Introduction | Module Introduction |
+| 2 | Terrain & Water | Raster Data Fundamentals |
+| 3 | Terrain & Water | Terrain Analysis & Hydrological Modelling |
+| 4 | Spatial Ecology & Occurrence | From Observations to Spatial Data |
+| 5 | Spatial Ecology & Occurrence | Spatial Patterns in Point Data (KDE, IDW) |
+| 6 | Paths & Flows | Networks & Graph Theory |
+| 7 | Paths & Flows | Routing & Accessibility Analysis |
+| 8 | Semester Project | Introduction & Topic Finding |
+| 9 | Terrain & Water | Workflow Automation |
+| 10 | Spatial Ecology & Occurrence | Webmapping in the Open Source Ecosystem |
+| 11 | Paths & Flows | Uncertainty in Geodata |
+| 12 | Semester Project | Coaching Sessions |
+| 13 | Semester Project | Guided Self-Study |
+| 14 | Semester Project | Guided Self-Study |
 
 ## Next Steps
-- Assign each method block to a specific domain
-- Decide on concrete datasets per block (some exist in research group, some to be sourced)
-- Refine week-by-week schedule
-- Determine co-lecturers once topics are settled
-- Update module description with more specific content once structure is confirmed

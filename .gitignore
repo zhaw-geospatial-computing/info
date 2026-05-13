@@ -1,5 +1,15 @@
+# R
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-.Rproj.user
+
+# Quarto output
+*.html
+*_files/
+_site/
+.quarto/
+*.pdf
+*.tex
+*.log
+.~lock.*

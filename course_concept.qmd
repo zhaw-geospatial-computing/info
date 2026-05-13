@@ -1,0 +1,106 @@
+---
+title: "Geospatial Computing — Course Concept"
+author: "Nils Ratnaweera"
+date: "2026-04-23"
+lang: en
+format:
+  typst:
+    toc: true
+    number-sections: true
+execute: 
+  echo: false
+---
+
+
+## Module at a Glance
+
+|                        |                                                    |
+|------------------------|----------------------------------------------------|
+| **Study programme**    | BSc Umweltingenieurwesen, ZHAW IUNR                |
+| **Type**               | Wahlpflichtmodul (Minor: Spatial Data Science)     |
+| **Semester**           | 5th semester (HS 2026)                             |
+| **ECTS**               | 5 (= 150 h total workload)                         |
+| **Contact hours**      | ~4 × 45 min/week × 14 weeks ≈ 56 h                 |
+| **Language**           | English                                            |
+| **Prerequisite**       | Geoinformatik und GIS (3rd semester)               |
+| **Students**           | ~30, environmental engineering                     |
+| **Module coordinator** | Nils Ratnaweera                                    |
+| **Co-lecturers**       | murj, rahn                                         |
+
+## Learning Outcomes
+
+Students are able to:
+
+- process and analyse vector and raster geospatial data in a script-based workflow
+- combine script-based geospatial workflows with GIS desktop software (QGIS)
+- independently carry out spatial analyses and transformations of geospatial datasets
+- develop automated and reproducible geospatial workflows
+- visualise and communicate spatial information in a task-appropriate manner
+- use AI-assisted tools to support coding and geospatial analysis tasks
+- apply learned methods to practical problems in environmental and spatial analysis
+
+## Course Structure
+
+The course runs over 14 weeks and is organised around three thematic blocks, each pairing a **method focus** with an **application domain**. Each block has a main two-week session and one advanced follow-up session in weeks 9–11. The second half closes with a semester project phase.
+
+```{r}
+#| output: false
+library(readxl)
+library(tidyr)
+library(dplyr)
+library(gt)
+
+plan <- read_xlsx(
+  "Geospatial-Computing-CurrFS27.xlsx",
+  sheet = "Wochenprogramm",
+  n_max = 14
+) |>
+  select(`W#`, Block, Lecturer, Subtitle, Theory, `Seminar / Group Work`, `Labs / Exercises`) |>
+  fill(Block, Lecturer)  # forward-fill merged cells from xlsx
+```
+
+```{r}
+#| label: tbl-schedule
+#| column: page
+#| tbl-cap: Weekly Schedule
+plan |>
+  mutate(
+    .run   = cumsum(Block != lag(Block, default = "") |
+                    Lecturer != lag(Lecturer, default = "")),
+    .group = paste0(Block, " (", Lecturer, ")", strrep("\u200b", .run))
+  ) |>
+  group_by(.group) |>
+  mutate(across(everything(), \(x)ifelse(is.na(x),"",x))) |> 
+  gt(rowname_col = "W#") |>
+  cols_hide(c("Block", "Lecturer", ".run")) |>
+  cols_label(
+    Subtitle               = "Topic",
+    Theory                 = "Theory",
+    `Seminar / Group Work` = "Seminar",
+    `Labs / Exercises`     = "Labs"
+  ) |>
+  tab_options(table.font.size = px(12))
+```
+
+
+
+
+## Semester Project
+
+Students carry out a semester-long project in which they apply the methods from all three blocks to a dataset of their choice. The project runs in parallel with the teaching blocks and culminates in a written report.
+
+The oral exam tests understanding of the methods and results — not the project output itself. This guards against unreflective use of AI tools.
+
+## Assessment
+
+| Component                                         | Type     | Weight |
+|---------------------------------------------------|----------|--------|
+| Project proposal                                  | Predicate (pass/fail) | — |
+| Written project report                            | Predicate (pass/fail) | — |
+| Coaching session attendance                       | Predicate (pass/fail) | — |
+| Oral end-of-module exam (~20 min)                 | Grade    | 100%   |
+
+All predicates must be passed to sit the oral exam. The module grade is determined solely by the oral exam.
+
+**Logistics:** 30 students × 20 min = 10 hours of examining. This requires 2–3 exam days and a co-examiner.
+

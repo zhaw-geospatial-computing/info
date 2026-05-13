@@ -1,0 +1,18 @@
+project:
+  type: website
+
+website:
+  title: "Geospatial Computing"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: course_concept.qmd
+        text: Course Concept
+      - href: meeting_prep_lecturers.qmd
+        text: Lecturer Meeting Prep
+      - href: 2026-03-31-Meeting-notes.qmd
+        text: Meeting Notes (2026-03-31)
+
+execute:
+  echo: false
