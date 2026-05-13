@@ -3,10 +3,6 @@ title: "Geospatial Computing — Course Concept"
 author: "Nils Ratnaweera"
 date: "2026-04-23"
 lang: en
-format:
-  typst:
-    toc: true
-    number-sections: true
 execute: 
   echo: false
 ---

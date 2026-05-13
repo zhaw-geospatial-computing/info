@@ -13,3 +13,5 @@ _site/
 *.tex
 *.log
 .~lock.*
+/.quarto/
+**/*.quarto_ipynb
