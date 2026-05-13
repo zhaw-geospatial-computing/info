@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "geospatial_computing_studienplanner.html",
+    "href": "geospatial_computing_studienplanner.html",
+    "title": "Geospatial Computing",
+    "section": "",
+    "text": "Modul: Geospatial Computing\nModulleitung: Nils Ratnaweera\nEssential Information\nBy focusing on computational approaches to working with geospatial data, you will continue and deepen your understanding of classical GIS workflows.\nYou will primarily use R as the scripting environment, drawing on your existing programming experience. Script-based workflows are complemented by graphical GIS tools, e.g. desktop GIS software, to support the exploration, analysis, and visualization of spatial data. In addition, you are introduced to the use of AI and large language models (LLMs) as supporting tools for geospatial problem-solving, coding, and analytical reasoning.\nThrough emphasizing applied, problem-oriented learning, you will be prepared to handle complex geospatial tasks in environmental and spatial analysis contexts.\nModule Contents\n\nAdvanced concepts of vector and raster geospatial data\nScript-based spatial data processing and analysis\nIntegration of scripting workflows with GUI-based GIS tools\nSpatial analysis and transformation of geospatial datasets\nVisualization and communication of spatial information\nAutomation and reproducibility of geospatial workflows\nAI-assisted approaches to geospatial analysis and coding\nApplied case studies in environmental and spatial data analysis"
+  },
+  {
+    "objectID": "meeting_prep_lecturers.html",
+    "href": "meeting_prep_lecturers.html",
+    "title": "Geospatial Computing — Course Planning Meeting",
+    "section": "",
+    "text": "This document provides background and a proposed framework for the new Geospatial Computing module. The goal of the meeting is to agree on the course structure and divide topics between us three lecturers (murj, rahn, laup)."
+  },
+  {
+    "objectID": "meeting_prep_lecturers.html#purpose-of-this-meeting",
+    "href": "meeting_prep_lecturers.html#purpose-of-this-meeting",
+    "title": "Geospatial Computing — Course Planning Meeting",
+    "section": "",
+    "text": "This document provides background and a proposed framework for the new Geospatial Computing module. The goal of the meeting is to agree on the course structure and divide topics between us three lecturers (murj, rahn, laup)."
+  },
+  {
+    "objectID": "meeting_prep_lecturers.html#module-at-a-glance",
+    "href": "meeting_prep_lecturers.html#module-at-a-glance",
+    "title": "Geospatial Computing — Course Planning Meeting",
+    "section": "Module at a Glance",
+    "text": "Module at a Glance\n\n\n\n\n\n\n\nStudy programme\nBSc Umweltingenieurwesen, ZHAW IUNR\n\n\nType\nElective module (Wahlpflichtmodul)\n\n\nMinor\nSpatial Data Science\n\n\nSemester\n5th semester (HS)\n\n\nECTS\n5 (= 150 h total workload)\n\n\nContact hours\n~4 × 45 min/week × 14 weeks ≈ 56 h\n\n\nLanguage\nEnglish\n\n\nPrerequisite\nGeoinformatik und GIS (3rd semester)\n\n\nStudents\n~30, environmental engineering, some programming background"
+  },
+  {
+    "objectID": "meeting_prep_lecturers.html#capacity-constraints",
+    "href": "meeting_prep_lecturers.html#capacity-constraints",
+    "title": "Geospatial Computing — Course Planning Meeting",
+    "section": "Capacity Constraints",
+    "text": "Capacity Constraints\nThe 14-week semester is not fully available for teaching:\n\n~1 week: project proposal presentations\n~1 week: coaching sessions (mandatory attendance)\n\nThis leaves roughly 12–13 weeks for teaching inputs, shared between three lecturers — approximately 3–4 weeks per person."
+  },
+  {
+    "objectID": "meeting_prep_lecturers.html#assessment-structure-confirmed",
+    "href": "meeting_prep_lecturers.html#assessment-structure-confirmed",
+    "title": "Geospatial Computing — Course Planning Meeting",
+    "section": "Assessment Structure (confirmed)",
+    "text": "Assessment Structure (confirmed)\nStudents complete three pass/fail predicates and one graded exam:\n\n\n\nComponent\nType\nDescription\n\n\n\n\nProject proposal\nPredicate\npass/fail\n\n\nWritten project report\nPredicate\npass/fail\n\n\nCoaching session attendance\nPredicate\npass/fail\n\n\nOral end-of-module exam (~20 min)\nGrade\n100% weight\n\n\n\nThe oral exam tests understanding of methods and results, not the project output itself. This is a deliberate design choice to guard against unreflective AI use. All predicates must be passed to sit the exam."
+  },
+  {
+    "objectID": "meeting_prep_lecturers.html#proposed-course-framework",
+    "href": "meeting_prep_lecturers.html#proposed-course-framework",
+    "title": "Geospatial Computing — Course Planning Meeting",
+    "section": "Proposed Course Framework",
+    "text": "Proposed Course Framework\nThe course is organised along two axes: methods and domains.\n\nMethods Axis\nEach lecturer teaches one or more method blocks. Each block is anchored to a specific application domain (see below), giving students a concrete dataset and problem to work with. The following methods are currently on the list — part of the meeting agenda is to reduce / enhance and confirm this list:\n\nSpatial pattern analysis — autocorrelation, hotspot analysis, interpolation\nUncertainty quantification — Monte Carlo simulation, error propagation, sensitivity analysis\nImage processing — automated detection from camera trap imagery (e.g. MegaDetector)\nMulti-Criteria Analysis (MCA) — spatial suitability modelling, decision support\nNetwork Analysis — routing, connectivity, accessibility\n\n\nWe likely have capacity for 3–4 of these, not all five. Selection is a key agenda item.\n\n\n\nDomains Axis\nEach method block is taught in the context of one application domain. Students then choose a domain for their own semester project and apply the methods they have learned. Current candidate domains:\n\nWildlife Monitoring — camera trap data, opportunistic species observations\nVegetation Ecology — spatial and temporal vegetation surveys\nHydrology — vectorised river networks (no remote sensing or drone data)\nEnvironmental Planning — visitor management, quiet area mapping\n\n\n\nToolsets\nThe following tools are introduced where relevant, rather than as standalone blocks:\n\nR / RStudio\nQGIS\nQGIS Model designer\nBuilding a QGIS Plugin — Python-based extension\nDatabases (PostGIS / SQLite)\nQField\nWebmapping"
+  },
+  {
+    "objectID": "meeting_prep_lecturers.html#rough-semester-skeleton",
+    "href": "meeting_prep_lecturers.html#rough-semester-skeleton",
+    "title": "Geospatial Computing — Course Planning Meeting",
+    "section": "Rough Semester Skeleton",
+    "text": "Rough Semester Skeleton\nTable 1 Shows a rough semester plan, very similar to the legacy AGI Modul. Each block is about 3 or 4 weeks long. Each block is in a single domain and covers 1 or 2 methods introducing 1 or 2 toolsets.\n\n\n\nTable 1"
+  },
+  {
+    "objectID": "meeting_prep_lecturers.html#course-framework-three-axes",
+    "href": "meeting_prep_lecturers.html#course-framework-three-axes",
+    "title": "Geospatial Computing — Course Planning Meeting",
+    "section": "Course Framework: Three Axes",
+    "text": "Course Framework: Three Axes\nAs described in Table 1 each block consists of one domain, and covers 1-2 methods and introduceds 1-2 toolsets. So we we should end up with about 1 - 3 lines per connection, as shown in below."
+  },
+  {
+    "objectID": "meeting_prep_lecturers.html#agenda-for-our-meeting",
+    "href": "meeting_prep_lecturers.html#agenda-for-our-meeting",
+    "title": "Geospatial Computing — Course Planning Meeting",
+    "section": "Agenda for Our Meeting",
+    "text": "Agenda for Our Meeting\n\nConfirm the three lists: Are any domains / methods / toolsets missing or superfluous?\nPerfect Matches:\n\nWhich domains, methods and toolsets offer themselves?\nWhat projects have we worked on that we could build upon?\n(What datasets are suitable)\n\nWhat combinations of domains, methods and toolsets are you intersted in following in your block? (A “connection” in ?@fig-connection)"
+  },
+  {
+    "objectID": "course_concept.html",
+    "href": "course_concept.html",
+    "title": "Geospatial Computing — Course Concept",
+    "section": "",
+    "text": "Study programme\nBSc Umweltingenieurwesen, ZHAW IUNR\n\n\nType\nWahlpflichtmodul (Minor: Spatial Data Science)\n\n\nSemester\n5th semester (HS 2026)\n\n\nECTS\n5 (= 150 h total workload)\n\n\nContact hours\n~4 × 45 min/week × 14 weeks ≈ 56 h\n\n\nLanguage\nEnglish\n\n\nPrerequisite\nGeoinformatik und GIS (3rd semester)\n\n\nStudents\n~30, environmental engineering\n\n\nModule coordinator\nNils Ratnaweera\n\n\nCo-lecturers\nmurj, rahn"
+  },
+  {
+    "objectID": "course_concept.html#module-at-a-glance",
+    "href": "course_concept.html#module-at-a-glance",
+    "title": "Geospatial Computing — Course Concept",
+    "section": "",
+    "text": "Study programme\nBSc Umweltingenieurwesen, ZHAW IUNR\n\n\nType\nWahlpflichtmodul (Minor: Spatial Data Science)\n\n\nSemester\n5th semester (HS 2026)\n\n\nECTS\n5 (= 150 h total workload)\n\n\nContact hours\n~4 × 45 min/week × 14 weeks ≈ 56 h\n\n\nLanguage\nEnglish\n\n\nPrerequisite\nGeoinformatik und GIS (3rd semester)\n\n\nStudents\n~30, environmental engineering\n\n\nModule coordinator\nNils Ratnaweera\n\n\nCo-lecturers\nmurj, rahn"
+  },
+  {
+    "objectID": "course_concept.html#learning-outcomes",
+    "href": "course_concept.html#learning-outcomes",
+    "title": "Geospatial Computing — Course Concept",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nStudents are able to:\n\nprocess and analyse vector and raster geospatial data in a script-based workflow\ncombine script-based geospatial workflows with GIS desktop software (QGIS)\nindependently carry out spatial analyses and transformations of geospatial datasets\ndevelop automated and reproducible geospatial workflows\nvisualise and communicate spatial information in a task-appropriate manner\nuse AI-assisted tools to support coding and geospatial analysis tasks\napply learned methods to practical problems in environmental and spatial analysis"
+  },
+  {
+    "objectID": "course_concept.html#course-structure",
+    "href": "course_concept.html#course-structure",
+    "title": "Geospatial Computing — Course Concept",
+    "section": "Course Structure",
+    "text": "Course Structure\nThe course runs over 14 weeks and is organised around three thematic blocks, each pairing a method focus with an application domain. Each block has a main two-week session and one advanced follow-up session in weeks 9–11. The second half closes with a semester project phase.\n\n\n\n\nTable 1: Weekly Schedule\n\n\n\n\n\n\n\n\n\n\nTopic\nTheory\nSeminar\nLabs\n\n\n\n\nIntroduction (rata)​\n\n\n1\nModule Introduction.\ncourse overview & structure, what is geospatial computing, CRS & projections recap\n\ntoolchain setup (R, QGIS, RStudio/Positron), first test script\n\n\nTerrain & Water (murj)​​\n\n\n2\nRaster Data Fundamentals\nRecap on raster data model. Dive into spatial resolution, map algebra, MCA\n\nloading rasters in R/QGIS, basic raster operations\n\n\n3\nTerrain Analysis & Hydrological Modelling\nDEM sources & quality, terrain derivatives (hillshade/slope/aspect), D8 flow direction algorithm, watershed concepts\n\nterrain function workflow, watershed delineation in QGIS/R\n\n\nSpatial Ecology & Occurrence (rahn)​​​\n\n\n4\nFrom Observations to Spatial Data\npoint data structure, data sources (GBIF, iNaturalist, camera traps), coordinate uncertainty, sampling bias\n\naccessing GBIF via API in R, mapping and filtering occurrence data\n\n\n5\nSpatial Patterns in Point Data\nKDE (bandwidth, kernel function), IDW (power parameter, distance decay)\n\ncomputing KDE & IDW in R/QGIS, comparing outputs with different parameters\n\n\nPaths & Flows (rata)​​​​\n\n\n6\nNetworks & Graph Theory\ngraph theory basics (nodes, edges, directed/undirected), centrality measures\n\nloading OSM network data, computing centrality with sfnetworks in R\n\n\n7\nRouting & Accessibility Analysis\nDijkstra's algorithm, isochrone concepts, accessibility measures\nImplementing Dijkstra «by hand»\ncomputing shortest paths & isochrones in R\n\n\nSemester Project (rata)​​​​​\n\n\n8\nIntroduction & Topic Finding\nproject brief, deliverables, assessment criteria, what makes a good research question\ntopic-finding workshop — students pitch ideas, get peer and lecturer feedback\n-\n\n\nTerrain & Water (murj)​​​​​​\n\n\n9\nWorkflow Automation\nreproducibility concepts, what makes a good workflow, when to use GUI vs. Scripting\n\nbuilding a model in QGIS Graphical Modeler, running batch processing on new data\n\n\nSpatial Ecology & Occurrence (rahn)​​​​​​​\n\n\n10\nWebmapping in the Opensource Ecosystem\nwhat is web mapping, server vs. client-side, web-friendly formats, performance challenges with large datasets\n\nconverting data to GeoJSON, publishing a webmap (QGIS Cloud or equivalent)\n\n\nPaths & Flows (rata)​​​​​​​​\n\n\n11\nUncertainty in Geodata\ntypes of uncertainty (positional, attribute, completeness), error propagation, Monte Carlo basics\nmonte carlo to calculate Pi\nrouting sensitivity analysis — vary edge weights, compare isochrone results\n\n\nSemester Project (Rata / murj / rahn)​​​​​​​​​\n\n\n12\nCoaching Sessions\n-\nstudents present their research question, data, and planned methods — lecturers and peers give feedback\n-\n\n\nSemester Project (Murj / rahn)​​​​​​​​​​\n\n\n13\nGuided self study\n-\nproject work (lecturers present for questions)\n-\n\n\n14\nGuided self study\n-\n\n-"
+  },
+  {
+    "objectID": "course_concept.html#semester-project",
+    "href": "course_concept.html#semester-project",
+    "title": "Geospatial Computing — Course Concept",
+    "section": "Semester Project",
+    "text": "Semester Project\nStudents carry out a semester-long project in which they apply the methods from all three blocks to a dataset of their choice. The project runs in parallel with the teaching blocks and culminates in a written report.\nThe oral exam tests understanding of the methods and results — not the project output itself. This guards against unreflective use of AI tools."
+  },
+  {
+    "objectID": "course_concept.html#assessment",
+    "href": "course_concept.html#assessment",
+    "title": "Geospatial Computing — Course Concept",
+    "section": "Assessment",
+    "text": "Assessment\n\n\n\n\n\n\n\n\nComponent\nType\nWeight\n\n\n\n\nProject proposal\nPredicate (pass/fail)\n—\n\n\nWritten project report\nPredicate (pass/fail)\n—\n\n\nCoaching session attendance\nPredicate (pass/fail)\n—\n\n\nOral end-of-module exam (~20 min)\nGrade\n100%\n\n\n\nAll predicates must be passed to sit the oral exam. The module grade is determined solely by the oral exam.\nLogistics: 30 students × 20 min = 10 hours of examining. This requires 2–3 exam days and a co-examiner."
+  },
+  {
+    "objectID": "Readme.html",
+    "href": "Readme.html",
+    "title": "Geospatial Computing",
+    "section": "",
+    "text": "Unsicherheit anhand einer MCE\n(Unsicherheit anhand von Tiersichtungen?)\nDatenvisualisierung anhand von Unsicherheit\nNetzwerkanalyse\nInteraktive Datenvisualisierung mit Webmaps\nModul aufbauen mit 1 - 2 Casestudies, die sich über die Theorieinputs aufbauen\nNicht nur mit R, sondern mit QGIS und wo nötig / sinnvoll R.\nHugglin Index mit Klimadaten? Consus?\nNetzwerkanalyse: Ladestationen (siehe AGI arbeiten), Energie\n20 Scripting\n60 Themen\n20 Visualisierung"
+  },
+  {
+    "objectID": "Word_Modulbeschreib_vorlage_neues_curriculum_de_en.html",
+    "href": "Word_Modulbeschreib_vorlage_neues_curriculum_de_en.html",
+    "title": "",
+    "section": "",
+    "text": "Modulbeschreibung / Deutsche Version\n\n\n\n\n\n\n\n\nStudiengang\nWird von scal eingetragen\n\n\nGelte\nnde Rechtsordnung\nWird von scal eingetragen\n\n\n\nStudienjahrgang\nUI24 – nur intern\n\n\n[Modulbe\nzeichnung]{.mark}\n\n\n\nModultyp\n\no Pflichtmodul xWahlpflichtmodul o Wahlmodul\n\n\n\nPlans emester\n\n\n1. Semester\n\n\n\n\n\n*Modulverantwort liche/r**\n\n\n\n\n\n\n**[Telefon /\nE-Mail]{.mark}**\n\n\n+41 58 934 XX XX / vorname.name@zhaw.ch\n\n\n\n\n**Beteiligte Mitarbeitende und\nLehrbeauftragte**\n\n\n\n\n\nVorausgesetzte Module\n\n\nSiehe Digitaler Studienplaner\n\n\n\n\nZu erreichende Kompetenzen\n\n\n\n\n\nInhalt des Moduls\n\n\n\n\n\n Anschlussmodule\n\n\n\n\n\nUnte rrichtsmethoden\n\n\n\n\n\n**Digitale\nLernressourcen**\n\n\nMoodle\nweitere\n\n\n\n\nUnte rrichtsgliederung / Gesamtaufwand\n\n\n\n\n\n\n\n\n\n\n\n&lt; strong&gt;Kontaktstu dium\n\n&lt; /blockquote&gt;\n\n\n56\n\n\n\n\n\n\nBegleitetes Selbststu dium\n\n&lt; /blockquote&gt;\n\n\n34\n\n\n\n\n\n\nAutonomes Selbststu dium\n\n&lt; /blockquote&gt;\n\n\n60\n\n\n\n\n\n\nTotal Work load\n\n&lt; /blockquote&gt;\n\n\n150\n\n\n\n\n\n\n\n\nPrä senzverpflichtung im Unterricht\n\n\n\n\n\n Leistungsnachweis – wird im Moku anders dargestellt. Scal braucht die genauen Infos.\n\n\n\n\n\n\n\n\n\n\nForm\n\nDauer (min.)\n\nGewichtung %*\n\nim Modul\n\n\n\n*Abgesetzte M odulprüfung\nschriftlich (Papier)*\n\n\n     \n\n\n     \n\n\n\n\nAbgesetzte M odulprüfung s chriftlich\n(e lektronisch /\ne-a ssessment)\n\n\n     \n\n\n     \n\n\n\n\nAbgesetzte M odulprüfung mündlich\n\n\n     \n\n\n     \n\n\n\n\nErfa hrungsnote\n\n\n\n     \n\n\n\n\nKommentare zum Leistungsnachweis:\n\n\n\nUnt errichtssprache\n\n\nDeutsch\n\n\n\n\nBemerkungen\n\n\n\n\n\nModulbeschreibung / Englische Version\n\n\n\n\n\n\n\n\nS\ntudy Programme\nWird von scal eingetragen\n\n\n\n\nRegulati\nons Applicable\nWird von scal eingetragen\n\n\n\nCohort\nUI 24 – nur intern\n\n\n\n\n[Modulbezei\nchnung]{.mark}\n\n\n\n\n\nModule Type\no Co\nmpulsory Module x Elective Module o Optional Module\n\n\n\n\nPlanned Seme ster\n\n\n1. Semester\n\n\n\n\n\nModule Coordin ator\n\n\n\n\n\n\nTelephone / E- Mail\n\n\n+41 58 934 XX XX / vorname.name@zhaw.ch\n\n\n\n\n\n**Lecturer(s), Speaker(s),\nAssociate(s)**\n\n\n\n\n\n\n**Entrance\nRequirements**\n\n\nSee Digital Study Planner\n\n\n\n\n\n**Learning Outcomes and\nCompetencies**\n\n\n\n\n\n\nModule Content\n\n\n\n\n\n\nFollow-up Modules\n\n\n\n\n\n\n**Methods of\nInstruction**\n\n\n\n\n\n\nDigital Resources\n\n\nMoodle\nother\n\n\n\n\n\nLesson Structure / Workload\n\n\n\n\n&lt; strong&gt;Contact Hour s\n\n\n\n\n\n\n56\n\n\n\n\n\n\nGuided Self-Stud y\n\n\n\n\n\n\n34\n\n\n\n\n\n\nIndependent Self-Stud y\n\n\n\n\n\n\n60\n\n\n\n\n\n\nTotal Workloa d\n\n\n\n\n\n\n150\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClassroom Attendance\n\n\n\n\n\n\nAssessment - wird im Moku anders dargestellt. Scal braucht die genauen Infos.\n\n\n\n\n\n\n\n\n\n\nForm\n\nDauer (min.) / Duration (min.)\nGewichtung %\nim Modul\n/ Weight in %\n\n\n\n*Abgesetzte Modulprüfung schriftlich (Papier) / Written\nend-of-module exam (on paper)*\n\n\n     \n\n\n     \n\n\n\n\n*Abgesetzte Modulprüfung schriftlich\n\n(elektronisch) /*\n*Written\nend-of-module exam ( e-assessment)*\n\n\n     \n\n\n     \n\n\n\n\nAbgesetzte Modulprüfung mündlich /\n*Oral\nend-of-module exam*\n\n\n     \n\n\n     \n\n\n\n\n\nErfahrungsnote /*\n\nCourse work\n\n\n     \n\n\n     \n\n\n\n\nKommentare zum Leistungsnachweis / comments:\n\n\n\n\n**Language of\nInstruction**\n\n\nDeutsch\n\n\n\n\n\nComments"
+  },
+  {
+    "objectID": "2026-03-31-Meeting-notes.html",
+    "href": "2026-03-31-Meeting-notes.html",
+    "title": "Protokoll Kickoff Meeting",
+    "section": "",
+    "text": "Zentral sind die Methods, siehe Abbildung 1 in meeting_prep_lecturers.pdf\n\nDavon ausgehend bestimmen wir Domains und Toolsets\nMulti-Criteria Analysis wird bereits GIS Basis Modul abgedeckt\nUncertainty könnte in einem anderen Block eingeführt, und danach in den anderen Blöcken aufgegriffen werden\nSpatial Pattern Analysis ist etwas nichtssagen, Point Pattern Analysis war hier gemeint\nFür die Übergeordneten Themen müssen noch schönere, spannendere Begriffe / Titel gewählt werden.\n\nEs kristalisieren sich folgende Themenblöcke Heraus (siehe Abbildung 1):\nNächste Schritte:"
+  },
+  {
+    "objectID": "2026-03-31-Meeting-notes.html#anhang",
+    "href": "2026-03-31-Meeting-notes.html#anhang",
+    "title": "Protokoll Kickoff Meeting",
+    "section": "Anhang",
+    "text": "Anhang\n\n\n\n\n\n\n\nAbbildung 1"
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html",
+    "href": "geospatial_computing_modulbeschreibung_draft.html",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "Field\nContent\n\n\n\n\nStudy Programme\nentered by scal\n\n\nRegulations Applicable\nentered by scal\n\n\nCohort\nUI 24 – internal only\n\n\nModule Name\nGeospatial Computing\n\n\nModule Type\nElective Module\n\n\nPlanned Semester\n5th Semester\n\n\nModule Coordinator\nNils Ratnaweera\n\n\nTelephone / E-Mail\n+41 58 934 55 63 / nils.ratnaweera@zhaw.ch\n\n\nLecturer(s), Speaker(s), Associate(s)\n(open)\n\n\nEntrance Requirements\nGeoinformatics and GIS (3rd Semester)\n\n\n\n\n\nStudents are able to:\n\nprocess and analyse vector and raster geospatial data using scripting tools in a script-based workflow.\ncombine and apply script-based geospatial workflows with GIS desktop software (e.g. QGIS).\nindependently carry out spatial analyses and transformations of geospatial datasets.\ndevelop automated and reproducible geospatial workflows.\nvisualise and communicate spatial information in a task-appropriate manner.\nuse AI-assisted tools to support coding and geospatial analysis tasks.\napply learned methods to practical problems in environmental and spatial analysis.\n\n\n\n\n\nAdvanced concepts of vector and raster geospatial data\nScript-based spatial data processing and analysis\nIntegration of scripting workflows with GUI-based GIS software\nSpatial analysis and transformation of geospatial datasets\nVisualisation and communication of spatial information\nAutomation and reproducibility of geospatial workflows\nAI-assisted approaches to geospatial analysis and coding\nApplied case studies in environmental and spatial data analysis\n\n\n\n\nNone\n\n\n\nInteractive lectures with inputs and demonstrations; hands-on computer-based exercises; guided self-study with weekly assignments; semester-long project work.\n\n\n\n\nMoodle\nR / RStudio\nQGIS\n\n\n\n\n\n\n\n\nHours\n\n\n\n\nContact Hours\n56\n\n\nGuided Self-Study\n34\n\n\nIndependent Self-Study\n60\n\n\nTotal Workload\n150\n\n\n\n\n\n\nCoaching session (100%) — required; pass/fail. Must be passed to pass the module.\n\n\n\n\n\n\n\n\n\n\n\nForm\nDuration (min.)\nWeight %\n\n\n\n\nPredicate: Project proposal (pass/fail)\n–\n–\n\n\nPredicate: Written project report (pass/fail)\n–\n–\n\n\nOral end-of-module exam (project presentation and discussion)\napprox. 20\n100%\n\n\n\nComments on assessment: The course assessment consists of three predicates — (1) a project proposal, (2) a coaching session and (3) a written report — and an oral exam. All predicates must be passed to sit the oral exam. The module grade is determined solely by the oral end-of-module exam.\n\n\n\nEnglish\n\n\n\n\nOpen items: co-lecturers (to be determined after topics are settled)."
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html#learning-outcomes-and-competencies",
+    "href": "geospatial_computing_modulbeschreibung_draft.html#learning-outcomes-and-competencies",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "Students are able to:\n\nprocess and analyse vector and raster geospatial data using scripting tools in a script-based workflow.\ncombine and apply script-based geospatial workflows with GIS desktop software (e.g. QGIS).\nindependently carry out spatial analyses and transformations of geospatial datasets.\ndevelop automated and reproducible geospatial workflows.\nvisualise and communicate spatial information in a task-appropriate manner.\nuse AI-assisted tools to support coding and geospatial analysis tasks.\napply learned methods to practical problems in environmental and spatial analysis."
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html#module-content",
+    "href": "geospatial_computing_modulbeschreibung_draft.html#module-content",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "Advanced concepts of vector and raster geospatial data\nScript-based spatial data processing and analysis\nIntegration of scripting workflows with GUI-based GIS software\nSpatial analysis and transformation of geospatial datasets\nVisualisation and communication of spatial information\nAutomation and reproducibility of geospatial workflows\nAI-assisted approaches to geospatial analysis and coding\nApplied case studies in environmental and spatial data analysis"
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html#follow-up-modules",
+    "href": "geospatial_computing_modulbeschreibung_draft.html#follow-up-modules",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "None"
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html#methods-of-instruction",
+    "href": "geospatial_computing_modulbeschreibung_draft.html#methods-of-instruction",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "Interactive lectures with inputs and demonstrations; hands-on computer-based exercises; guided self-study with weekly assignments; semester-long project work."
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html#digital-resources",
+    "href": "geospatial_computing_modulbeschreibung_draft.html#digital-resources",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "Moodle\nR / RStudio\nQGIS"
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html#lesson-structure-workload",
+    "href": "geospatial_computing_modulbeschreibung_draft.html#lesson-structure-workload",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "Hours\n\n\n\n\nContact Hours\n56\n\n\nGuided Self-Study\n34\n\n\nIndependent Self-Study\n60\n\n\nTotal Workload\n150"
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html#classroom-attendance",
+    "href": "geospatial_computing_modulbeschreibung_draft.html#classroom-attendance",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "Coaching session (100%) — required; pass/fail. Must be passed to pass the module."
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html#assessment",
+    "href": "geospatial_computing_modulbeschreibung_draft.html#assessment",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "Form\nDuration (min.)\nWeight %\n\n\n\n\nPredicate: Project proposal (pass/fail)\n–\n–\n\n\nPredicate: Written project report (pass/fail)\n–\n–\n\n\nOral end-of-module exam (project presentation and discussion)\napprox. 20\n100%\n\n\n\nComments on assessment: The course assessment consists of three predicates — (1) a project proposal, (2) a coaching session and (3) a written report — and an oral exam. All predicates must be passed to sit the oral exam. The module grade is determined solely by the oral end-of-module exam."
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html#language-of-instruction",
+    "href": "geospatial_computing_modulbeschreibung_draft.html#language-of-instruction",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "English"
+  },
+  {
+    "objectID": "geospatial_computing_modulbeschreibung_draft.html#comments",
+    "href": "geospatial_computing_modulbeschreibung_draft.html#comments",
+    "title": "Module Description – Geospatial Computing",
+    "section": "",
+    "text": "Open items: co-lecturers (to be determined after topics are settled)."
+  }
+]

@@ -1,0 +1,1 @@
+Sitemap: https://zhaw-geospatial-computing.github.io/info/sitemap.xml
