@@ -1,0 +1,116 @@
+---
+title: "Modul *Geospatial Computing*"
+subtitle: "Im Minor *Spatial Data Science*"
+author: ""
+format: 
+  revealjs:
+    transition: convex
+    background-transition: fade
+    theme: dark
+    template-partials:
+      - title-slide.html
+    css: style.css
+    # title-slide-attributes: 
+      # data-background-image: images/atmosphere_geo5_2018235_lrg_2.jpg
+---
+
+#
+
+
+::::{.testimonial-container  .text-small}
+
+:::{.testimonial-image}
+![](images/rata.webp){#rata}
+:::
+
+:::{.testimonial-content}
+**Nils Ratnaweera**
+
+Wissenschaftlicher Mitarbeiter  
+Forschungsgruppe Geoinformatik  
+
+Institut für Umwelt und Natürliche Ressourcen  
+ZHAW Zürcher Hochschule für Angewandte Wissenschaften  
+Grüental, Postfach, CH-8820 Wädenswil
+
++41 58 934 55 63  
+rata\@zhaw.ch  
+:::
+
+::::
+
+
+
+#
+
+![](images/minor.png){#minor}
+
+
+
+# Raumzeitliche Analysen {background-video="images/ouput2.webm" background-video-loop="true" class="shadow"}
+
+
+::: footer
+Quelle: [www.maps.tnc.org](https://www.maps.tnc.org/migrations-in-motion/)
+:::
+
+:::{.notes}
+
+Migration von Vögel (Türkis / Blau), Säugetiere (Pink) und Amphibien (Gelb)
+
+:::
+
+# Umgang mit Unsicherheit {background-image="images/mountain-6867144_1920.jpg" class="shadow"}
+
+# Netzwerkanalyse {background-image="images/architecture-1837176_1920.jpg" class="blurred shadow"}
+
+# Scripting {background-image="images/typewriter-8622984_1280.jpg" class="shadow blurred"}
+
+# Geovisualisierung {background-image="images/atmosphere_geo5_2018235_lrg_2.jpg"}
+
+::: footer
+Quelle: [earthobservatory.nasa.gov/](https://earthobservatory.nasa.gov/images/92654/just-another-day-on-aerosol-earth)
+:::
+
+
+  
+#
+
+
+::::{.testimonial-container  .text-small}
+
+:::{.testimonial-image}
+![](images/max.webp){#max}
+:::
+
+:::{.testimonial-content}
+> Ich hätte nie gedacht, wie wichtig und nützlich GIS in meinem Berufsleben sein würde. Nun arbeite ich fast jeden Tag damit.
+:::
+
+:::{.attribution}
+— Max Pröschel<br>Amt für Abfall, Wasser, Energie und Luft - Kanton Zürich
+:::
+::::
+  
+#
+
+
+::::{.testimonial-container  .text-small}
+
+:::{.testimonial-image}
+![](images/fabienne-stucki-2.jpg){#fabi}
+:::
+
+:::{.testimonial-content}
+> GIS ist tagtäglich Teil unserer Arbeit. Wir nutzen es für Darstellungen in Berichten, Boden- oder Vegetationskarten, Aufnahmen im Feld, für Analysen oder Gestaltungspläne.
+:::
+
+:::{.attribution}
+— Fabienne Stucki, UI09<br>Mitarbeiterin bei K + D Landschaftsplanung AG, Chur
+:::
+::::
+ 
+
+
+# {background-image="images/stelle.png" background-size="contain" background-color="#333333"}
+
